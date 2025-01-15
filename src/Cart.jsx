@@ -3,7 +3,7 @@ function Cart({ cart, total, handleRemoveCart, addQuantity, reduceQuantity }) {
     const discounted = (amount) => (amount * (90/100)).toFixed(2);  
     
     return (
-        <div className='mx-24'>
+        <div className='mx-10 sm:mx-24'>
             <h3 className='text-center text-[3rem]'>Cart</h3>
             {cart.map((item, index) => {
                 return (
